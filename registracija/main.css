@@ -1,0 +1,11 @@
+.mojbtn {
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

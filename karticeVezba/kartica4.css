@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.card {
+    width: 400px;
+    height: 500px;
+}
+
+.mainCard {
+    width: 400px;
+    height: 500px;
+}
+
+.cardHeader {
+    width: 440px;
+    height: 150px;
+    position: relative;
+}
+
+.imgHeader {
+    width: 100%;
+    height: 100%
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(-150px);
+}
+
+.rect {
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+}
+
+.body {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    line-height: 30px;
+    background-color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: white;
+}
+
+#fadein {
+    opacity: 0.5;
+}

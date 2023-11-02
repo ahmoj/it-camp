@@ -1,0 +1,54 @@
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.main {
+   width: 100%;
+   min-height: 100vh;
+   background-color: whitesmoke;
+}
+
+.nav {
+   width: 100%;
+   height: 50px;
+   background-color: rgb(92, 92, 224);
+   display: flex;
+   flex-direction: row;
+   color: white;
+   gap: 20px;
+}
+
+.nav span{
+   width: 70px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   margin: 0 10px 0 10px;
+}
+
+.nav p {
+   translate: 0 -10px;
+   padding: 20px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.nav span:hover {
+   background-color: rgb(42, 42, 153);
+}
+
+.nav p:hover{
+   background-color: rgb(42, 42, 153)
+}
+
+input {
+   width: 200px;
+   height: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
