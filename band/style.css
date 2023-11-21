@@ -1,0 +1,266 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    color: white;
+    position: relative;
+    position: fixed;
+}
+
+.leftNav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.rightNav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.leftNav span {
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.dropdown {
+    width: 300px;
+    height: 150px;
+    position: fixed;
+    margin-top: 20px;
+    display: none;
+}
+
+.dropdown span:hover {
+    background-color: rgb(167, 165, 165);
+}
+
+.burgerIcon:hover .dropdown {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightNav i {
+    padding: 20px;
+}
+
+.leftNav span:hover {
+    background-color: gray;
+}
+
+.rightNav i:hover {
+    background-color: orangered;
+}
+
+.header {
+    width: 100%;
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url('https://www.w3schools.com/w3images/la.jpg');
+    animation-name: images;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes images {
+    0% {
+        background-image: url('https://www.w3schools.com/w3images/la.jpg');
+    }
+
+    50% {
+        background-image: url('https://www.w3schools.com/w3images/ny.jpg');
+    }
+
+    100% {
+        background-image: url('https://www.w3schools.com/w3images/chicago.jpg');
+    }
+}
+
+.band {
+    padding-top: 100px;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spanBand {
+    width: 900px;
+    height: 100px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.rowBand {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.cardBand {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardBand img {
+    width: 100%;
+    height: 80%;
+}
+
+.tour {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTour {
+    width: 700px;
+    height: 150px;
+    background-color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemTour {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.rowTour {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.cardTour {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+}
+
+.headerCardTour {
+    width: 100%;
+    height: 50%;
+    background-image: url('https://www.w3schools.com/w3images/newyork.jpg');
+}
+
+.bodyCardTour {
+    padding: 10px;
+    text-align: left;
+}
+
+.bodyCardTour button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.bodyCardTour button:hover {
+    background-color: gray;
+}
+
+.contact {
+    padding-top: 50px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContact {
+    margin-top: 50px;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    position: relative;
+}
+
+.left-contact {
+    width: 50%;
+    height: 100%;
+    line-height: 25px;
+}
+
+.image {
+    width: 100%;
+    height: 800px;
+    background-image: url('https://www.w3schools.com/w3images/map.jpg');
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    font-size: 25px;
+    color: gray;
+    translate: 20px;
+}
+
+.icon-container i:hover {
+    opacity: 0.5;
+}
