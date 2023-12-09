@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+}
+
+i {
+    position: relative;
+    animation: zvezda 5s linear infinite;
+    left: 0;
+    top: 0;P{KMNHTREHHH}
+}
+
+@keyframes zvezda {
+    from {
+        right: 100%;
+        bottom: 100%;
+    }
+
+    to {
+        left: 100%;
+        top: 100%;
+    }
+}

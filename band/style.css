@@ -83,7 +83,7 @@ body, html {
     justify-content: end;
     background-image: url('https://www.w3schools.com/w3images/la.jpg');
     animation-name: images;
-    animation-duration: 30s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
 }
 
