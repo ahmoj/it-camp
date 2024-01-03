@@ -111,4 +111,95 @@
 //       console.log(`Nisi nista kupio`);
 // }
 
+// let num = prompt('unesi broj');
 
+// if (!isNaN(num)) {
+//    console.log('Vas broj je broj')
+
+//    if(num % 2 == 0){
+//     console.log('Vas broj je paran')
+//    }
+//    else{
+//     console.log('Vas broj je neparan');
+//    }
+// }
+// else {
+//     console.log('Reko sam ti da uneses broj');
+// }
+
+// const num = prompt('unesi broj')
+
+// if(num % 3 == 0){
+//     console.log('fizz')
+// }
+// else if(num % 5 == 0){
+//     console.log('buzz');
+// }
+// else if(num % 3 == 0 && num % 5 == 0 ){
+//     console.log('fizzbuzz');
+// }
+// else if(isNaN(num)){
+//     console.log('nije broj');
+// }
+// else{
+//     console.log('nije deljiv ni sa cim');
+// }
+
+// const num1 = prompt('unesi 1. broj');
+// const num2 = prompt('unesi 2. broj');
+// const num3 = prompt('unesi 3. broj');
+
+// if(num1 % 3 == 0){
+//     console.log('fizz')
+// }
+// else if(num1 % 5 == 0){
+//     console.log('buzz');
+// }
+// else if(num1 % 3 == 0 && num1 % 5 == 0 ){
+//     console.log('fizzbuzz');
+// }
+// else if(isNaN(num1)){
+//     console.log('nije broj');
+// }
+// else{
+//     console.log('nije deljiv ni sa cim');
+// }
+
+// if(num2 % 3 == 0){
+//     console.log('fizz')
+// }
+// else if(num2 % 5 == 0){
+//     console.log('buzz');
+// }
+// else if(num2 % 3 == 0 && num2 % 5 == 0 ){
+//     console.log('fizzbuzz');
+// }
+// else if(isNaN(num2)){
+//     console.log('nije broj');
+// }
+// else{
+//     console.log('nije deljiv ni sa cim');
+// }
+
+// if(num3 % 3 == 0){
+//     console.log('fizz')
+// }
+// else if(num3 % 5 == 0){
+//     console.log('buzz');
+// }
+// else if(num3 % 3 == 0 && num3 % 5 == 0 ){
+//     console.log('fizzbuzz');
+// }
+// else if(isNaN(num3)){
+//     console.log('nije broj');
+// }
+// else{
+//     console.log('nije deljiv ni sa cim');
+// }
+
+function sabiranje(num1, num2){
+    const sum = Number(num1) + Number(num2)
+    alert(`${num1} + ${num2} = ${sum}`);
+}
+
+sabiranje(prompt('unesi 1. broj'), prompt('unesi 2. broj'))
