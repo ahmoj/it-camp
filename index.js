@@ -54,7 +54,7 @@
 //             ________________
 //          __|                |__
 //       __|     ____     ____    |__
-//    __|       |    |   |    |      |__
+//    __|       | __ |   | __ |      |__
 //   |          |____|   |____|         |                  
 //   |                                  | 
 //   |    |__                     __|   |
@@ -197,9 +197,106 @@
 //     console.log('nije deljiv ni sa cim');
 // }
 
-function sabiranje(num1, num2){
-    const sum = Number(num1) + Number(num2)
-    alert(`${num1} + ${num2} = ${sum}`);
-}
+// function sabiranje(num1, num2){
+//     const sum = Number(num1) + Number(num2)
+//     alert(`${num1} + ${num2} = ${sum}`);
+// }
 
-sabiranje(prompt('unesi 1. broj'), prompt('unesi 2. broj'))
+// sabiranje(prompt('unesi 1. broj'), prompt('unesi 2. broj'))
+
+// let fruits = ['jabuka', 'banana', 'kruska', 'pomorandza', 'sljiva']
+// for (let i = 0; i < fruits.length; i++) {
+//   text = fruits[i] 
+//   console.log(text);
+// }
+
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+// let counter = arr.length -1
+
+// while(counter >= 0){
+//     console.log(arr[counter])
+//     counter--;
+// }
+
+// const arr = [1,2,3,4,5,6]
+
+// let index = 0;
+
+// while(index < arr.length){
+//     console.log(arr[index])
+//     index++;
+// }
+
+// const arr = [1,2,3,4,5,6,7,8,9,10,11,12]
+// const parni = []
+// const neparni = []
+
+// let index = 0;
+
+// while(index < arr.length){
+//     if(arr[index] % 2 == 0){
+//         parni.push(arr[index])
+//     }
+//     else{
+//         neparni.push(arr[index])
+//     }
+//     index++;
+// }
+
+// console.log(parni);
+// console.log(neparni);
+
+// const username = 'ahmed'
+// const password = 'ahmed123'
+// let unosUsername = ''
+// let unosPassword = ''
+
+// while (username !== unosUsername){
+//     unosUsername = prompt('Unesite username')
+//     if(unosUsername !== username){
+//         alert('Pogresili ste username ili password')
+//     }
+// }
+
+// while (password !== unosPassword){
+//     unosPassword = prompt('Unesite password')
+//     if(unosPassword !== password){
+//         alert('Pogresili ste username ili password')
+//     }
+// }
+
+// alert('Uspesno ste se ulogovali')
+
+// window.location.replace('menu.html')
+
+// const arr = [1,2,3,4,5,6,7]
+// const reverseArr = [];
+
+// for (let i = arr.length - 1; i >= 0; i--){
+//     reverseArr.push(arr[i])
+// }
+
+// console.log(reverseArr);
+
+// const arr1 = [1,2,3,4,5,6,7]
+// const arr2 = [1,3,3,5,6,7,8]
+// const newArr = []
+
+// for (i = 0; i < arr1.length; i++){
+//     if(arr1[i] === arr2[i]){
+//         newArr.push(arr1[i])
+//     }
+// }
+
+// console.log(newArr);
+
+// const arr = [[1,2,3],[1,2,3],[1,2,3]];
+// const newArr = []
+
+// for (let i = 0; i < arr.length; i++){
+//     for (let j = 0; j < arr[i].length; j++){
+//         newArr.push(arr[i][j])
+//     }
+// }
+
+// console.log(newArr);

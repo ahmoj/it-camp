@@ -21,3 +21,17 @@ function calculator(num1, num2, operation){
 }
 
 calculator(prompt('Unesi 1. broj'), prompt('Unesi 2. broj'), prompt('Unesi operaciju'))
+
+
+//             ________________
+//          __|                |__
+//       __|     ____     ____    |__
+//    __|       | __ |   | __ |      |__
+//   |          |____|   |____|         |                  
+//   |                                  | 
+//   |    |__                     __|   |
+//   |       |__                __|     |      
+//   |__        |______________|      __|
+//      |__                        __| 
+//         |__                  __| 
+//            |________________|
