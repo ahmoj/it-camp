@@ -1,0 +1,4 @@
+// arr.push() ubacuje elemente na kraju
+// arr.pop() izbacuje poslednji element
+// arr.shift() izbacuje prvi element
+// arr.unshift() ubacuje element na pocetak

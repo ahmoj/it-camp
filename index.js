@@ -300,3 +300,89 @@
 // }
 
 // console.log(newArr);
+
+// const text = 'ime-prezime'
+
+// let ime = ''
+// let prezime = ''
+// let pomocnaVar = false
+
+// for (let i = 0; i < text.length; i++){
+//    if (text[i] === '-'){
+//     pomocnaVar = true;
+//     continue;
+//    }
+//    if (pomocnaVar === false){
+//     ime += text[i]
+//    }
+//    if (pomocnaVar === true){
+//     prezime += text[i]
+//    }
+// }
+
+// console.log(ime,prezime);
+
+// const arr = [1,2,3,4,5,6,7,8]
+
+// console.log(arr.includes(1));
+
+// const arr1 = arr.join('\n')
+
+// console.log(arr1);
+
+// const ahmed = 'ahmed nije dolazio'
+
+// const ahmed1 = ahmed.replace('nije','je')
+// console.log(ahmed1);
+
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+// const arr1 = []
+// const arr2 = []
+
+// for (let i = 0; i < arr.length; i++){
+//     arr1.push(arr[i] * arr[i])
+// }
+
+// for (let j = 0; j < arr1.length; j++){
+//     arr2.push(arr1[j].toString())
+// }
+
+// console.log(arr1)
+// console.log(arr2);
+
+// const arr = [1,2,3,4,5,6,7,8,9,10]
+
+// const noviNiz = arr.map((el) => String(el*el))
+// console.log(noviNiz);
+
+// const zadatakZadaca = [12,32,32,321,213,3213,1313131,313131]
+
+
+// const  bucanResenje = zadatakZadaca.map((el,i,arr) => {
+//     if(i === 0){
+//        return el;
+//     }
+//     else {
+//         if(el % 2 === 0){
+//             return el-arr[i-1]
+//         }
+//         else  {
+//             return el
+//         }    }
+// })
+
+// console.log(bucanResenje);
+
+
+const arr = [1,2,3,4,5,6,7,8,9,10]
+
+const newArr = arr.map((el,i,arr) => {
+    if (el % 2 === 0){
+        return el - 1;
+    }
+    else{
+        return el + 1;
+    }
+})
+
+console.log(newArr);
