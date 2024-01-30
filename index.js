@@ -374,15 +374,61 @@
 // console.log(bucanResenje);
 
 
-const arr = [1,2,3,4,5,6,7,8,9,10]
+// const arr = [1,2,3,4,5,6,7,8,9,10]
 
-const newArr = arr.map((el,i,arr) => {
-    if (el % 2 === 0){
-        return el - 1;
-    }
-    else{
-        return el + 1;
+// const newArr = arr.map((el,i,arr) => {
+//     if (el % 2 === 0){
+//         return el - 1;
+//     }
+//     else{
+//         return el + 1;
+//     }
+// })
+
+// console.log(newArr);
+
+// broj = prompt('Unesi broj:')
+// operator = prompt('Unesi operator')
+// const newArr = []
+// function newMap(arr){
+//     for (let i = 0; i < arr.length; i++){
+//         newArr.push(eval(`${arr[i]} ${operator} ${broj}`))
+//     }
+// }
+
+// newMap([1,2,3,4,5])
+// console.log(newArr);
+
+// const kemal = [1,2,3,4,5,6,7,8,9,10,11,12]
+// const veljko = [2,3,4,5,6,7,8,9]
+
+// let kemalVeljko = []
+
+// kemalVeljko = kemal.concat(veljko)
+
+// console.log(kemalVeljko);
+
+// const svi = [1,2,3,4,5,6,7,8,9,10]
+
+// const samoNeparni = []
+
+// // for (let i = 0; i < svi.length; i++){
+// //     if(svi[i] % 2 !== 0) samoNeparni.push(svi[i])
+// // }
+
+// const samoNeparniFilter = svi.filter((el) => el % 2 !== 0)
+
+// console.log(samoNeparniFilter);
+
+// console.log(samoNeparniFilter.includes(1));
+
+const bazaPodataka = ['Ahmed', 'Silvester', 'Veljko', 'Nerma', 'Faris', 'Mervan', 'Sergejbit']
+let sergejBezBit = ''
+
+bazaPodataka.forEach((el,i,arr) => {
+    if (el === 'Sergejbit'){
+        sergejBezBit = 'Sergej'
     }
 })
 
-console.log(newArr);
+console.log(sergejBezBit);
