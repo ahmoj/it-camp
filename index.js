@@ -113,7 +113,7 @@
 
 // let num = prompt('unesi broj');
 
-// if (!isNaN(num)) {
+// if (!isNan(num)) {
 //    console.log('Vas broj je broj')
 
 //    if(num % 2 == 0){
@@ -422,13 +422,93 @@
 
 // console.log(samoNeparniFilter.includes(1));
 
-const bazaPodataka = ['Ahmed', 'Silvester', 'Veljko', 'Nerma', 'Faris', 'Mervan', 'Sergejbit']
-let sergejBezBit = ''
+// const bazaPodataka = ['Ahmed', 'Silvester', 'Veljko', 'Nerma', 'Faris', 'Mervan', 'Sergejbit']
+// let sergejBezBit = ''
 
-bazaPodataka.forEach((el,i,arr) => {
-    if (el === 'Sergejbit'){
-        sergejBezBit = 'Sergej'
-    }
-})
+// bazaPodataka.forEach((el,i,arr) => {
+//     if (el === 'Sergejbit'){
+//         sergejBezBit = 'Sergej'
+//     }
+// })
 
-console.log(sergejBezBit);
+// console.log(sergejBezBit);
+
+// function swapCase(text) {
+//     let newText = ''
+
+//     for (let i = 0; i < text.length; i++){
+//         let char = text[i]
+
+//         if (char === char.toUpperCase()){
+//             newText += char.toLowerCase()
+//         }
+//         else {
+//             newText += char.toUpperCase()
+//         }
+//     }
+//     return newText;
+// }
+
+// console.log(swapCase('The Quick Brown Fox'));
+
+// const arr = ['Nan', 0, 15, false, -22, '',undefined, 47, null]
+// const newArr = []
+
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] === 'Nan'){
+//         continue;
+//     }
+//     if (arr[i] === 0){
+//         continue;
+//     }
+//     if (arr[i] === false){
+//         continue;
+//     }
+//     if (arr[i] === ''){
+//         continue;
+//     }
+//     if (arr[i] === undefined){
+//         continue;
+//     }
+//     if (arr[i] === null){
+//         continue;
+//     }
+//     else {
+//         newArr.push(arr[i])
+//     }
+// }
+
+// console.log(newArr);
+
+// const arr = [[1,2,3,4], [5,6,7,8,9,10]]
+// const newArr = []
+
+// for (let i = 0; i < arr.length; i++){
+//     for (let j = 0; j < arr[i].length; j++){
+//         newArr.push(arr[i][j])
+//     }
+// }
+
+// console.log(newArr);
+
+// const flex = arr.flat()
+// console.log(flex);
+
+
+
+//             ________________
+//          __|                |__
+//       __|     ____     ____    |__
+//    __|       | __ |   | __ |      |__
+//   |          |____|   |____|         |                  
+//   |                                  | 
+//   |    |__                     __|   |
+//   |       |__                __|     |      
+//   |__        |______________|      __|
+//      |__                        __| 
+//         |__                  __| 
+//            |________________|
+
+const testSome = [1,2,3,4,5,6,7]
+
+console.log(testSome.some((el) => el > 0));
