@@ -71,9 +71,9 @@
 
 // console.log(typeof test);
 
-// let kemal = prompt('Koliko ima kemal');
+// let user = prompt('Koliko ima user');
 // const staZelisKupiti = prompt('Mozes kupiti 1.cokolada, 2.cigare , 3.sok').toLowerCase();
-// console.log(typeof kemal);
+// console.log(typeof user);
 
 // const sok = 60;
 // const cokolada = 40;
@@ -509,6 +509,26 @@
 //         |__                  __| 
 //            |________________|
 
-const testSome = [1,2,3,4,5,6,7]
+// const testSome = [1,2,3,4,5,6,7]
 
-console.log(testSome.some((el) => el > 0));
+// console.log(testSome.some((el) => el > 0));
+
+// const ucenici = [['Kemal', 'Skrijelj', 18, 'SVE'], ['Ahmed', 'Jerebicanin', 13, 'Dobar Covek']]
+
+// console.log(ucenici[1])
+
+// const ahmed = {
+//     ime : 'Ahmed',
+//     prezime : 'Jerebicanin',
+//     godine : 13,
+//     zanimanje : 'Dobar Covek',
+// }
+
+// ahmed.lokacija = 'Novi Pazar'
+// console.log(ahmed);
+
+// const user = {
+//     ime : prompt('Unesite ime'),
+//     prezime : prompt('Unesite prezime'),
+//     godine : prompt('Unesite godine'
+
