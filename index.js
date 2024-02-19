@@ -518,17 +518,149 @@
 // console.log(ucenici[1])
 
 // const ahmed = {
-//     ime : 'Ahmed',
+//     ime : "Ahmed",
 //     prezime : 'Jerebicanin',
-//     godine : 13,
-//     zanimanje : 'Dobar Covek',
+//     godine : 13
 // }
 
 // ahmed.lokacija = 'Novi Pazar'
 // console.log(ahmed);
 
-// const user = {
-//     ime : prompt('Unesite ime'),
-//     prezime : prompt('Unesite prezime'),
-//     godine : prompt('Unesite godine'
+// console.log(ahmed.ime);
 
+
+// const user = {
+//     username : '',
+//     email : '',
+//     password : ''
+// }
+
+// user.username = prompt('Unesite username')
+
+// while (user.username.length < 3 || !isNaN(user.username)){
+//     alert('Username treba da ima bar 3 slova...')
+//     user.username = prompt('Unesite username')
+// }
+
+// user.email = prompt('Unesite vas email')
+
+// while (user.email < 3){
+//     alert('Email treba da sadrzi bar 3 karaktera...')
+//     user.email = prompt('Unesite vas email')
+// }
+
+// while (!user.email.includes('@')){
+//     alert('Email treba da sadrzi @...')
+//     user.email = prompt('Unesite vas email')
+// }
+
+// user.password = prompt('Unesite password')
+
+// while (user.password.length < 3 ){
+//     alert('Password treba da ima bar 3 karaktera...')
+//     user.password = prompt('Unesite password')
+// }
+
+
+
+
+// let usernameLogIn = prompt('Unesite username da bi se ulogovali')
+
+// while (usernameLogIn !== user.username){
+//     alert('Niste uneli tacni username...')
+//     usernameLogIn = prompt('Unesite username da bi se ulogovali')
+// }
+
+// let passwordLogIn = prompt('Unesite password da bi se ulogovali')
+
+// while (passwordLogIn !== user.password){
+//     alert('Niste uneli tacnu sifru...')
+//     passwordLogIn = prompt('Unesite password da bi se ulogovali')
+// }
+
+// console.log(user);
+
+// const arr = [1,1,2,3,4,5,6,2,7,9,9]
+
+// const noDuplicates = new Set (arr)
+// console.log(noDuplicates);
+
+// let output = {}
+
+// arr.forEach((el) => output[el] = (output[el] || 0) + 1)
+
+// console.log(output);
+
+// const ucenik = {
+//     ime: 'Sergej',
+//     prezime: 'Knezevic',
+//     starost: 15,
+//     imeIPrezime: function () {
+//         return `${this.ime} ${this.prezime}`
+//     }
+// }
+
+// console.log(ucenik.imeIPrezime());
+
+// function getFullName() {
+//     return this.ime + '' + this.prezime
+// }
+
+// console.log(getFullName.call(ucenik));
+
+// console.log(getFullName());
+
+// Unutar postojeceg objekta dodati nova svojstva:
+// 1. trenutnaBrzina: 0,
+// 2. maksimalnaBrzina: 260,
+// 3. povecanjeBrzine: (metoda koja uzima jedan argument),
+// 4. smanjenjeBrzine: (metoda koja uzima jedan argument),
+// 5. koci: (metoda koja dodeljuje 0 za vrednost trenutne brzine).
+ 
+const myCar = {
+    id: 1,
+    marka: "Audi",
+    model: "a4",
+    boja: "Crvena",
+    pogon: "prednji",
+    menjac: "automatski",
+    kontakt: '[0622222, 02033322]',
+    servis: {
+      datum: "04,maj",
+      km: 23000,
+      serviser: "Pasovic",
+    },
+    udaran: true,
+  };
+
+myCar.trenutnaBrzina = 0
+myCar.maxBrzina = 0
+
+myCar.povecanjeBrzine = function (povecanje) {
+    this.trenutnaBrzina += povecanje; 
+    if (this.trenutnaBrzina > this.maxBrzina){
+        console.log('Ne moze vise od 260...');
+        this.trenutnaBrzina = this.maxBrzina
+    }
+}
+
+myCar.smanjenjeBrzine = function (smanjenje) {
+    this.trenutnaBrzina -= smanjenje; 
+    if (this.trenutnaBrzina < 0){
+        console.log('Ne moze manje od 0...');
+        this.trenutnaBrzina = 0
+    }
+}
+
+myCar.koci = function () {
+    this.trenutnaBrzina = 0
+}
+
+myCar.povecanjeBrzine(300)
+console.log(myCar.trenutnaBrzina);
+
+myCar.smanjenjeBrzine(500)
+console.log(myCar.trenutnaBrzina);
+
+myCar.koci()
+console.log(myCar.trenutnaBrzina);
