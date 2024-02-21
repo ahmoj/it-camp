@@ -617,50 +617,75 @@
 // 4. smanjenjeBrzine: (metoda koja uzima jedan argument),
 // 5. koci: (metoda koja dodeljuje 0 za vrednost trenutne brzine).
  
-const myCar = {
-    id: 1,
-    marka: "Audi",
-    model: "a4",
-    boja: "Crvena",
-    pogon: "prednji",
-    menjac: "automatski",
-    kontakt: '[0622222, 02033322]',
-    servis: {
-      datum: "04,maj",
-      km: 23000,
-      serviser: "Pasovic",
-    },
-    udaran: true,
-  };
+// const myCar = {
+//     id: 1,
+//     marka: "Audi",
+//     model: "a4",
+//     boja: "Crvena",
+//     pogon: "prednji",
+//     menjac: "automatski",
+//     kontakt: '[0622222, 02033322]',
+//     servis: {
+//       datum: "04,maj",
+//       km: 23000,
+//       serviser: "Pasovic",
+//     },
+//     udaran: true,
+//   };
 
-myCar.trenutnaBrzina = 0
-myCar.maxBrzina = 0
+// myCar.trenutnaBrzina = 0
+// myCar.maxBrzina = 0
 
-myCar.povecanjeBrzine = function (povecanje) {
-    this.trenutnaBrzina += povecanje; 
-    if (this.trenutnaBrzina > this.maxBrzina){
-        console.log('Ne moze vise od 260...');
-        this.trenutnaBrzina = this.maxBrzina
+// myCar.povecanjeBrzine = function (povecanje) {
+//     this.trenutnaBrzina += povecanje; 
+//     if (this.trenutnaBrzina > this.maxBrzina){
+//         console.log('Ne moze vise od 260...');
+//         this.trenutnaBrzina = this.maxBrzina
+//     }
+// }
+
+// myCar.smanjenjeBrzine = function (smanjenje) {
+//     this.trenutnaBrzina -= smanjenje; 
+//     if (this.trenutnaBrzina < 0){
+//         console.log('Ne moze manje od 0...');
+//         this.trenutnaBrzina = 0
+//     }
+// }
+
+// myCar.koci = function () {
+//     this.trenutnaBrzina = 0
+// }
+
+// myCar.povecanjeBrzine(300)
+// console.log(myCar.trenutnaBrzina);
+
+// myCar.smanjenjeBrzine(500)
+// console.log(myCar.trenutnaBrzina);
+
+// myCar.koci()
+// console.log(myCar.trenutnaBrzina);
+
+class Age {
+    constructor(godina, mesec, dan) {
+        this.godina = godina
+        this.mesec = mesec
+        this.dan = dan
+    }
+    myCurrentAge(){
+        const date = new Date()
+        return date.getFullYear() - this.godina
+    }
+    myCurrentMonth(){
+        const date = new Date()
+        return date.getMonth() - this.mesec
+    }
+    myCurrentDay(){
+        const date = new Date()
+        return date.getDay() - this.dan
     }
 }
 
-myCar.smanjenjeBrzine = function (smanjenje) {
-    this.trenutnaBrzina -= smanjenje; 
-    if (this.trenutnaBrzina < 0){
-        console.log('Ne moze manje od 0...');
-        this.trenutnaBrzina = 0
-    }
-}
+const myAge = new Age(prompt('Unesi godinu rodjenja'), prompt('Unesi mesec rodjenja'), prompt('Unesite dan rodjenja'))
+console.log(myAge);
 
-myCar.koci = function () {
-    this.trenutnaBrzina = 0
-}
-
-myCar.povecanjeBrzine(300)
-console.log(myCar.trenutnaBrzina);
-
-myCar.smanjenjeBrzine(500)
-console.log(myCar.trenutnaBrzina);
-
-myCar.koci()
-console.log(myCar.trenutnaBrzina);
+console.log(`Tvoj broj godina je ${myAge.myCurrentAge()} ${myAge.myCurrentMonth()} ${myAge.myCurrentDay()}` );
