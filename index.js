@@ -665,27 +665,214 @@
 // myCar.koci()
 // console.log(myCar.trenutnaBrzina);
 
-class Age {
-    constructor(godina, mesec, dan) {
-        this.godina = godina
-        this.mesec = mesec
-        this.dan = dan
-    }
-    myCurrentAge(){
-        const date = new Date()
-        return date.getFullYear() - this.godina
-    }
-    myCurrentMonth(){
-        const date = new Date()
-        return date.getMonth() - this.mesec
-    }
-    myCurrentDay(){
-        const date = new Date()
-        return date.getDay() - this.dan
-    }
-}
+// class Age {
+//     constructor(godina, mesec, dan) {
+//         this.godina = godina
+//         this.mesec = mesec
+//         this.dan = dan
+//     }
+//     myCurrentAge(){
+//         const date = new Date()
+//         return date.getFullYear() - this.godina
+//     }
+//     myCurrentMonth(){
+//         const date = new Date()
+//         return date.getMonth() - this.mesec
+//     }
+//     myCurrentDay(){
+//         const date = new Date()
+//         return date.getDay() - this.dan
+//     }
+// }
 
-const myAge = new Age(prompt('Unesi godinu rodjenja'), prompt('Unesi mesec rodjenja'), prompt('Unesite dan rodjenja'))
-console.log(myAge);
+// const myAge = new Age(prompt('Unesi godinu rodjenja'), prompt('Unesi mesec rodjenja'), prompt('Unesite dan rodjenja'))
+// console.log(myAge);
 
-console.log(`Tvoj broj godina je ${myAge.myCurrentAge()} ${myAge.myCurrentMonth()} ${myAge.myCurrentDay()}` );
+// console.log(`Tvoj broj godina je ${myAge.myCurrentAge()} ${myAge.myCurrentMonth()} ${myAge.myCurrentDay()}` );
+
+// const person = [
+//     {
+//         ucenik: {
+//             skola: ['Osnovna', 'Srednja'],
+//             informacije: {ime: 'ime', prezime: 'prezime'}
+//         },
+//     },
+// ]
+
+// const {ucenik} = person[0]
+// const {skola, informacije} = ucenik
+// const {ime, prezime} = informacije
+// console.log('Prvo ime:', ime, 'Prezime:', prezime);
+
+// const niz = [1,2,3,4,5]
+
+// const [prviBroj, drugiBroj, ...restoBrojeva] = niz
+// console.log(prviBroj, drugiBroj)
+// console.log(...restoBrojeva);
+
+// const restaurant = {
+//     name: 'Classico Italiona',
+//     location: 'Via Angelo Tavanti 23, Firenza, Italy',
+//     categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//     starterMenu: ['Foccacia', 'Bruscetta', 'Garlic bread'],
+//     mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//     openingHours: {
+//         Thursday: {
+            
+//         }
+//     }
+// }
+
+// class Covek {
+//     constructor(ime, prezime, godine){
+//         this.ime = ime
+//         this.prezime = prezime,
+//         this.godine = godine
+//     }
+
+//     getFullName(){
+//         console.log(`Vase ime i prezime je : ${this.ime} ${this.prezime}`);
+//     }
+// }
+
+// const ahmed = new Covek('Ahmed', 'Jerebicanin', 13)
+// const kemal = new Covek('Kemal', 'Skrijelj', 18)
+
+// ahmed.getFullName()
+
+// const acc = []
+// const pomocnaVar = true
+
+// class Account {
+//     constructor(username, password, email, godine){
+//         this.username = prompt('Unesi ime')
+//         this.password = prompt('Unesi password')
+//     }
+
+//     getInfo(){
+//         console.log(this.username);
+//     }
+// }
+
+// let counter = 0
+
+// while (counter < 3){
+//     acc.push(new Account())
+//     counter++;
+// }
+
+// if (!localStorage.getItem('isLogedIn')){
+//     console.log(localStorage.setItem('username', prompt('unesi ime')))
+//     console.log(localStorage.setItem('sifra', prompt('unesi sifru')))
+//     console.log(localStorage.setItem('isLogedIn', true))
+// }
+// else {
+//     alert(`Dobro dosao ${localStorage.getItem('username')}`)
+// }
+
+// const osoba = {
+//     ime:'ahmed',
+//     prezime:'jerebicanin',
+//     godine:13
+// }
+
+// Object.entries(osoba).forEach(([key, value]) =>{
+//     console.log(`${key} : ${value}`);
+// })
+
+// class Osoba {
+//     constructor(ime, prezime, godine){
+//         this.ime = ime,
+//         this.prezime = prezime,
+//         this.godine = godine
+//     }
+// }
+
+// class Ucenik extends Osoba {
+//     constructor(skola, ime, prezime, godine){
+//         super(ime, prezime, godine)
+//         this.skola = skola  
+//     }
+
+//     info(){
+//         console.log(this.godine, this.ime, this.prezime, this.skola);
+//     }
+// }
+
+// const ahmed = new Ucenik('Cana', 'Ahmed', 'Jerbo', 13)
+
+// ahmed.info()
+
+// class Ljubimac {
+//     constructor(ime, starost, boja){
+//         this.ime = ime,
+//         this.starost = starost
+//         this.boja = boja
+//     }
+// }
+
+// class Pas extends Ljubimac {
+//     constructor(lajanje,ime, starost, boja ){
+//         super(ime, starost, boja)
+//         this.lajanje = lajanje
+//     }
+
+//     laj(){
+//         console.log(this.lajanje)
+//     }
+// }
+
+// const pas = new Pas('av! av!')
+
+// pas.laj()
+
+// class Macka extends Ljubimac {
+//     constructor(mnjaukanje,ime, starost, boja ){
+//         super(ime, starost, boja)
+//         this.mnjaukanje = mnjaukanje
+//     }
+
+//     mnjauci(){
+//         console.log(this.mnjaukanje);
+//     }
+// }
+
+// const macka = new Macka('mnjau!')
+
+// macka.mnjauci()
+
+// const arr = [1,2,3,4,5,6,7,8,9]
+
+// const sum = arr.reduce((prevVal, currVal) =>{
+//     return prevVal + currVal
+// })
+
+// console.log(sum);
+
+// const knjige = [{ime:'knj1', brojStr:200, tip:'roman'}, {ime:'knj2', brojStr:220, tip:'istorija'}, {ime:'knj3', brojStr:120, tip:'roman'}, {ime:'knj4', brojStr:340, tip:'roman'}]
+
+// const str = knjige.reduce((prevVal, currVal) =>{
+//     if(currVal.tip === 'roman'){
+//         return prevVal + currVal.brojStr
+//     }
+//     else {
+//         return prevVal
+//     }
+// },0)
+
+// console.log(str);
+
+// const ahmed = {
+//     ime:'ahmo',
+//     prezime:'jerebicanin',
+//     godine:14
+// }
+
+// const {ime,...rest} = ahmed
+// console.log(ime, rest);
+
+// const terOper = 2 === 2 ? true : false
+// console.log(terOper);
+// const isCovek = 'covek' == 'zena' ? 'jesteCovek' : 'nijeCovek'
+// console.log(isCovek);
+
