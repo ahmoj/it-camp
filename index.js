@@ -876,3 +876,25 @@
 // const isCovek = 'covek' == 'zena' ? 'jesteCovek' : 'nijeCovek'
 // console.log(isCovek);
 
+// const arrObj = [{ime:'ime'}, {ime:'ime2'}]
+
+// arrObj.push({prezime:'prezime'})
+// console.log(arrObj);
+
+// const arrOfKeys = []
+// const arrOfValues = []
+
+// const obj = {
+//     ime:'ime1',
+//     prezime:'prezime1',
+//     godine: 13,
+//     lokacija: '1234'
+// }
+
+// Object.entries(obj).forEach(([key, value]) =>{
+//     arrOfKeys.push(key)
+//     arrOfValues.push(value)
+// })
+
+// console.log(arrOfKeys)
+// console.log(arrOfValues);
