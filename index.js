@@ -898,3 +898,107 @@
 
 // console.log(arrOfKeys)
 // console.log(arrOfValues);
+
+// const ahmed = 2
+
+// try {
+//     kemal = 3
+// }
+// catch (error){
+//     console.log(error);
+// }
+
+// console.log('Jesi siguran');
+
+// const obecanje = new Promise((res, rej) =>{
+//     setTimeout(() =>{
+//         const result = false
+//         if(result){
+//             res('Uspesno')
+//         }
+//         else {
+//             rej('Neuspesno')
+//         }
+//     },1000)
+// })
+
+// obecanje.then((res) =>{
+//     console.log(res);
+// }).catch((rej) =>{
+//     console.log(rej);
+// }).finally(() =>{
+//     console.log('Ne zanima me..');
+// })
+
+// const podaci = [
+//     {ime:'Kemal', id:1}, {ime:'Veljko', id:2},
+//     {ime:'Nadija', id:3}, {ime:'Sergej', id:4},
+//     {ime:'Nerma', id:5}, {ime:'Ahmed', id:2},
+//     {ime:'Mervan', id:2}, {ime:'Faris', id:2},
+//     {ime:'Ahmed', id:2},{ime:'Kemal', id:1}, {ime:'Veljko', id:2},
+//     {ime:'Nadija', id:3}, {ime:'Sergej', id:4},
+//     {ime:'Nerma', id:5}, {ime:'Ahmed', id:2},
+//     {ime:'Mervan', id:2}, {ime:'Faris', id:2},
+//     {ime:'Ahmed', id:2},{ime:'Kemal', id:1}
+// ]
+
+/////////////////////////////////////////////
+
+// const arr = [1,1,3,3,4,5,6,7,8,9,7,8]
+
+// const noDuplicates = new Set (arr)
+// console.log(noDuplicates);
+
+// let output = {}
+
+// arr.forEach((el) => output[el] = (output[el] || 0) + 1)
+
+// console.log(output);
+
+/////////////////////////////////////////////
+
+// const ime = []
+
+// for (let i = 0; i < podaci.length; i++){
+//     if(podaci[i].ime.includes('Ah')){
+//         ime.push(podaci[i].ime)
+//     }
+//     else {
+//         continue;
+//     }
+// }
+
+// console.log(ime);
+
+/////////////////////////////////////////////
+
+// for (let i = 0; i < podaci.length; i++){
+//     if(podaci[i].id === podaci[i].id){
+//         let unos = prompt('Unesi novi id')
+//         podaci[i].id = unos
+//     }
+// }
+
+// console.log(podaci);
+
+// setInterval(() =>{
+//     setTimeout(() => {
+//         console.log('eto me tako to setTimeout');
+//     },2000)
+//     console.log('eto me tako to');
+// },1000)
+
+// let lengthOfUser;
+// let dataFromApi = fetch('https://62e57f72de23e26379210498.mockapi.io/v1').then(res => res.json()).then(data => {
+//     lengthOfUser = data.length
+//     console.log(lengthOfUser);
+//     let unos = prompt(`Unesite broj od 1 do ${lengthOfUser}`)
+
+
+//     fetch(`https://62e57f72de23e26379210498.mockapi.io/v1/${unos}`).then(res => res.json()).then((data) => {
+//         console.log(`data of user number: ${unos}`, data);
+//     })
+// })
+
+
+
