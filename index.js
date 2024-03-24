@@ -988,16 +988,41 @@
 //     console.log('eto me tako to');
 // },1000)
 
-// let lengthOfUser;
-// let dataFromApi = fetch('https://62e57f72de23e26379210498.mockapi.io/v1').then(res => res.json()).then(data => {
-//     lengthOfUser = data.length
-//     console.log(lengthOfUser);
-//     let unos = prompt(`Unesite broj od 1 do ${lengthOfUser}`)
+const container = document.querySelector('.container')
 
+let lengthOfUser;
+let dataFromApi = fetch('https://62e57f72de23e26379210498.mockapi.io/v1').then(res => res.json()).then(data => {
+    lengthOfUser = data.length
+    console.log(lengthOfUser);
 
-//     fetch(`https://62e57f72de23e26379210498.mockapi.io/v1/${unos}`).then(res => res.json()).then((data) => {
-//         console.log(`data of user number: ${unos}`, data);
-//     })
+    for (let i = 0; i < data.length; i++){
+        container.innerHTML += `<div>
+            <p>${data[i].name}<p>
+            <img src = ${data[i].avatar}></img>
+        </div>`
+    }
+    // fetch(`https://62e57f72de23e26379210498.mockapi.io/v1/${unos}`).then(res => res.json()).then((data) => {
+    //     console.log(`data of user number: ${unos}`, data);
+    //     container.innerHTML += `<div>
+    //      <p>${data.name}</p>
+    //      <img src=${data.avatar}></img>
+    //     </div>`
+    // })
+})
+
+// const container = document.querySelector('.container')
+
+// const content = `<div>
+//     <p>Testiramo nase znanje</p>
+//     <button id='btn'>KLIKNI ME</button>
+// </div>`
+
+// container.innerHTML += content
+
+// const btn = document.getElementById('btn')
+
+// btn.addEventListener('click',() => {
+//     btn.style.background = 'red'
 // })
 
 
